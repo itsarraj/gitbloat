@@ -1,0 +1,23 @@
+[package]
+name = "gitbloat"
+version = "0.1.0"
+edition = "2021"
+description = "What's bloating this git repo, including files since deleted but still in history"
+license = "MIT"
+authors = ["Animesh Raj <animesh080808@gmail.com>"]
+repository = "https://github.com/itsarraj/gitbloat"
+readme = "README.md"
+keywords = ["git", "repo-size", "history", "bloat", "git-sizer"]
+categories = ["command-line-utilities", "development-tools"]
+
+[lib]
+name = "gitbloat"
+path = "src/lib.rs"
+
+[[bin]]
+name = "gitbloat"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
