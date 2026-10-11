@@ -5,6 +5,12 @@ sitting in history. GitHub's own `git-sizer` covers part of this
 read-only, without a ranked "biggest offenders" view; nothing gives you
 the equivalent of `dust`/`ncdu` specifically over git history.
 
+## Installation
+
+```sh
+cargo install --path .
+```
+
 ## Usage
 
 ```bash
